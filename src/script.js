@@ -33,6 +33,7 @@ const renderCart = () => {
         list.appendChild(li)
     })
     document.getElementById("total").textContent = calculateTotal()
+    localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 const pay = () => {
@@ -66,3 +67,10 @@ const scrollToCart = () => {
         behavior: "smooth"
     })
 }
+
+const savedCart = localStorage.getItem("cart")
+
+    if (savedCart) {
+        cart = JSON.parse(savedCart)
+        renderCart()
+    }
