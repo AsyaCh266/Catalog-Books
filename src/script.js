@@ -70,7 +70,7 @@ const scrollToCart = () => {
 
 const savedCart = localStorage.getItem("cart")
 
-    if (savedCart) {
-        cart = JSON.parse(savedCart)
-        renderCart()
-    }
+if (savedCart) {
+    cart = JSON.parse(savedCart)
+    renderCart()
+}
