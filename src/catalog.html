@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Каталог - Мир книг</title>
+</head>
+<body>
+
+<ul class="menu">
+    <li><a href="mainStr.html">Главная</a></li>
+    <li><a href="catalog.html">Каталог</a></li>
+</ul>
+
+<hr>
+<h1>Каталог</h1>
+<div class="top-bar">
+    <div>
+        <input type="text" id="search" placeholder="Поиск книги">
+
+        <select id="category" onchange="filterBooks()">
+            <option value="all">Все</option>
+            <option value="драма">Драма</option>
+            <option value="антиутопия">Антиутопия</option>
+            <option value="фэнтези">Фэнтези</option>
+            <option value="роман">Роман</option>
+        </select>
+
+        <button onclick="filterBooks()">Найти</button>
+    </div>
+
+    <button onclick="scrollToCart()">Перейти в корзину</button>
+</div>
+<hr>
+
+<div class="book" data-name="на дне" data-category="драма">
+    <a href="book1.html">
+        <img src="book1.jpg" width="200" alt="Книга 1">
+    </a>
+    <p><a href="book1.html">На дне</a></p>
+    <button onclick="addToCart(1)">В корзину</button>
+</div>
+
+<div class="book" data-name="1984" data-category="антиутопия">
+    <a href="book2.html">
+        <img src="book2.jpg" width="200" alt="1984">
+    </a>
+    <p><a href="book2.html">1984</a></p>
+    <button onclick="addToCart(2)">В корзину</button>
+</div>
+
+<div class="book" data-name="гарри Поттер" data-category="фэнтези">
+    <a href="book3.html">
+        <img src="book3.jpg" width="200" alt="Гарри Поттер">
+    </a>
+    <p><a href="book3.html">Гарри Поттер и философский камень</a></p>
+    <button onclick="addToCart(3)">В корзину</button>
+</div>
+
+<div class="book" data-name="мастер и Маргарита" data-category="роман">
+    <a href="book4.html">
+        <img src="book4.jpg" width="200" alt="Мастер и Маргарита">
+    </a>
+    <p><a href="book4.html">Мастер и Маргарита</a></p>
+    <button onclick="addToCart(4)">В корзину</button>
+</div>
+
+<hr>
+
+<h2>Корзина</h2>
+<ul id="cart-items"></ul>
+<p>Итого: <span id="total">0</span> руб</p>
+<button onclick="pay()">Оплатить</button>
+<hr>
+
+<footer>
+    <p>© Все права защищены</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

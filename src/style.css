@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(230, 245, 255);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(200, 220, 240);
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 8px 12px;
+    display: block;
+}
+
+ul.menu li a:hover {
+    color: rgb(0, 100, 200);
+}
+
+h2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.short-description {
+    color: rgb(0, 120, 120);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.full-description {
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.characteristics {
+    list-style-image: url('marker.jpg');
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.characteristics li {
+    color: rgb(100, 50, 150);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.top-bar input {
+    padding: 5px;
+}
+
+.top-bar button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
